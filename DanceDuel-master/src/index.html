@@ -1,0 +1,346 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#100923" />
+    <meta name="color-scheme" content="light" />
+
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <meta name="google" content="notranslate" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover shrink-to-fit=no user-scalable=no"
+    />
+
+    <!-- SEO [OPEN GRAPH] -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="DanceDuel" />
+    <meta property="og:title" content="DanceDuel — Фантазия - суперсила в мире героев!" />
+    <meta
+      property="og:description"
+      content="Создавайте, фантазируйте и сражайтесь за честь главного танцора геройского мира"
+    />
+
+    <!-- SEO [BASIC] -->
+    <meta
+      name="description"
+      content="Создавайт."
+    />
+    <meta name="keywords" content="DanceDuel, heroes, gaming, arsenal" />
+    <meta name="copyright" content="GITHUB.COM/KAKOITO-CHEL" />
+    <meta name="robots" content="index, follow" />
+
+
+    <!-- APPLICATION WEBVIEW-ICONS -->
+    <link rel="icon" type="image/x-png" sizes="16x16" href="./images/favicon/log-16x16.png" />
+    <link rel="icon" type="image/x-png" sizes="32x32" href="./images/favicon/log-32x32.png" />
+    <link rel="icon" type="image/x-png" sizes="64x64" href="./images/favicon/log-64x64.png" />
+    <link rel="icon" type="image/x-png" sizes="72x72" href="./images/favicon/log-72x72.png" />
+    <link rel="icon" type="image/x-png" sizes="128x128" href="./images/favicon/log-128x128.png" />
+
+    <!-- APPLICATION WEBVIEW-TITLE -->
+    <title>DanceDuel — Фантазия - суперсила в мире героев! 🪄</title>
+
+    <!-- GOOGLE STATICS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- PRIMARY STYLESHEET -->
+    <link rel="stylesheet" href="assets/css/primary.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (let j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js', 'ym');
+      ym(96008321, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      });
+    </script>
+    <noscript>
+      <div>
+        <img src="https://mc.yandex.ru/watch/96008321" style="position: absolute; left: -99999px" alt="" />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <header>
+      <div class="container">
+        <h1 class="page__heading">💃Dance Duel🥷</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="game-zones">
+        <section class="form__wrapper">
+          <form id="heroForm" class="form" onsubmit="event.preventDefault()">
+            <label class="radio__label__title">Класс</label>
+
+            <div class="radio__row">
+              <input class="radio__input" name="class" type="radio" id="classMage" value="Mage" checked />
+              <label class="radio__label" for="classMage">Маг 🔮</label>
+
+              <input class="radio__input" type="radio" id="classKnight" name="class" value="Knight" />
+              <label class="radio__label" for="classKnight"> Рыцарь🗡</label>
+            </div>
+
+            <label class="form__input__label" for="name">
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                maxlength="24"
+                placeholder="Имя"
+                required="required"
+              />
+            </label>
+
+            <label class="form__input__label" for="level">
+              <input
+                class="form__input"
+                type="number"
+                maxlength="2"
+                id="level"
+                min="1"
+                max="10"
+                name="levelLevel"
+                placeholder="Уровень(1-10)"
+                required="required"
+              />
+            </label>
+
+            <div class="form__parameters">
+              <label class="form__input__label" for="strength">
+                <input
+                  class="form__input form__parameters__input"
+                  type="number"
+                  maxlength="2"
+                  min="1"
+                  max="99"
+                  id="strength"
+                  name="strength"
+                  placeholder="Сила(1-99)"
+                  required="required"
+                />
+              </label>
+
+              <label class="form__input__label" for="intelligence">
+                <input
+                  class="form__input form__parameters__input"
+                  type="number"
+                  maxlength="2"
+                  min="1"
+                  max="99"
+                  id="intelligence"
+                  name="intelligence"
+                  placeholder="Интелект(1-99)"
+                  required="required"
+                />
+              </label>
+
+              <label class="form__input__label" for="agility">
+                <input
+                  class="form__input form__parameters__input"
+                  type="number"
+                  maxlength="2"
+                  min="1"
+                  max="99"
+                  id="agility"
+                  name="agility"
+                  placeholder="Ловкость(1-99)"
+                  required="required"
+                />
+              </label>
+
+              <label class="form__input__label" for="additionalStat">
+                <input
+                  class="form__input form__parameters__input"
+                  type="number"
+                  id="additionalStat"
+                  maxlength="2"
+                  min="1"
+                  name="additionalStat"
+                  placeholder="Мана(1-99)"
+                />
+              </label>
+
+              <script>
+                var classRadio = document.getElementsByName("class");
+                var additionalStatInput = document.getElementById("additionalStat");
+
+                for (var i = 0; i < classRadio.length; i++) {
+                  classRadio[i].addEventListener("change", function () {
+                    if (this.value === "Knight") {
+                      additionalStatInput.placeholder = "Энергия(1-99)";
+                    } else {
+                      additionalStatInput.placeholder = "Мана(1-99)";
+                    }
+                  });
+                }
+              </script>
+
+            </div>
+            <label class="radio__label__title" id="additionalAbilityText"
+              >Есть ли тектоническое зелье?</label
+            >
+
+            <script>
+              var classRadio = document.getElementsByName("class");
+              var additionalAbilityText = document.getElementById("additionalAbilityText");
+
+              for (var i = 0; i < classRadio.length; i++) {
+                classRadio[i].addEventListener("change", function () {
+                  if (this.value === "Mage") {
+                    additionalAbilityText.textContent = "Есть ли тектоническое зелье?";
+                  } else {
+                    additionalAbilityText.textContent = "Танцевать танго верхом на лошади?";
+                  }
+                });
+              }
+            </script>
+
+            <div class="radio__row">
+              <input
+                class="radio__input"
+                type="radio"
+                id="additionalAbilityTrue"
+                name="additionalAbility"
+                value="true"
+                checked
+              />
+              <label class="radio__label" for="additionalAbilityTrue">Да</label>
+
+              <input
+                class="radio__input"
+                type="radio"
+                id="additionalAbilityFalse"
+                name="additionalAbility"
+                value="false"
+              />
+              <label class="radio__label" for="additionalAbilityFalse">Нет</label>
+            </div>
+            <button class="form__button" id="sendToBattleButton" type="submit">Создать</button>
+          </form>
+        </section>
+
+        <section class="battle-zone">
+          <div class="cards">
+            <div class="card__wrapper">
+              <h2 class="card__heading">Ваш герой</h2>
+              <div class="card">
+                <div class="card__content">
+                  <div class="card__title">
+                    <h2 id="playerHeroClass" class="card__class">Класс</h2>
+                    <h2 id="playerHeroName" class="card__title__text">Имя</h2>
+                  </div>
+                  <div class="card__description">
+                    <h3 class="card__level">
+                      Уровень:
+                      <span id="playerHeroLevel" class="hero__level__amount">--</span>
+                    </h3>
+                    <p class="card__parameters__heading">Статы:</p>
+                    <div class="card__parameters">
+                      <div class="card__parameter">
+                        <p class="card__parameter__title">Сила</p>
+                        <span id="playerHeroStrength" class="card__parameter__value">--</span>
+                      </div>
+                      <div class="card__parameter">
+                        <p class="card__parameter__title">Ловкость</p>
+                        <span id="playerHeroAgility" class="card__parameter__value">--</span>
+                      </div>
+                      <div class="card__parameter">
+                        <p class="card__parameter__title">HP</p>
+                        <span id="playerHeroHp" class="card__parameter__value">--</span>
+                      </div>
+                      <div class="card__parameter">
+                        <p class="card__parameter__title">Интеллект</p>
+                        <span id="playerHeroIntelligence" class="card__parameter__value">--</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="doSkillButton" class="card__button" disabled>Юзануть ульту</button>
+              </div>
+            </div>
+            <div class="card__wrapper">
+              <h2 class="card__heading">Герой оппонета</h2>
+              <div class="card">
+                <div class="card__content">
+                  <div class="card__title">
+                    <h2 id="enemyHeroClass" class="card__class">Класс</h2>
+                    <h2 id="enemyHeroName" class="card__title__text">Имя</h2>
+                  </div>
+                  <div class="card__description">
+                    <h3 class="card__level">
+                      Уровень:
+                      <span id="enemyHeroLevel" class="hero__level__amount">--</span>
+                    </h3>
+                    <p class="card__parameters__heading">Статы:</p>
+                    <div class="card__parameters">
+                      <div class="card__parameter">
+                        <p class="card__parameter__title">Сила</p>
+                        <span id="enemyHeroStrength" class="card__parameter__value">--</span>
+                      </div>
+                      <div class="card__parameter">
+                        <p class="card__parameter__title">Ловкость</p>
+                        <span id="enemyHeroAgility" class="card__parameter__value">--</span>
+                      </div>
+                      <div class="card__parameter">
+                        <p class="card__parameter__title">HP</p>
+                        <span id="enemyHeroHp" class="card__parameter__value">--</span>
+                      </div>
+                      <div class="card__parameter">
+                        <p class="card__parameter__title">Интеллект</p>
+                        <span id="enemyHeroIntelligence" class="card__parameter__value">--</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="getEnemyButton" class="card__button" disabled>Найти оппонента</button>
+              </div>
+            </div>
+          </div>
+          <button id="startBattleButton" class="battle-zone__button" disabled>НАЧНЕМ ЖЕ БАТЛ!</button>
+          <div class="battle-zone__author">
+            <h5 class="battle-zone__author__text" aria-label="Author Information">
+              C 💙🩵 от
+              <a
+                class="battle-zone__author__link"
+                target="_blank"
+                href="https://github.com/kakoito-chel"
+                aria-label="Venom's GitHub"
+                >@Venom
+              </a>
+            </h5>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- CONNECTING SCRIPT (WEBPACK) -->
+    <script src="./assets/js/bundle.js" async="async"></script>
+  </body>
+</html>
